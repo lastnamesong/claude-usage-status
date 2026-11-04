@@ -2,15 +2,15 @@
 
 [English](../README.md) | [한국어](README.ko.md) | **简体中文**
 
-![license](https://img.shields.io/badge/license-MIT-blue) ![version](https://img.shields.io/badge/version-0.2.1-green) ![claude code](https://img.shields.io/badge/Claude_Code-mod-orange)
+![license](https://img.shields.io/badge/license-MIT-blue) ![version](https://img.shields.io/badge/version-0.2.2-green) ![claude code](https://img.shields.io/badge/Claude_Code-mod-orange)
 
 一个 Claude Code mod，在状态栏中常驻显示**本月按 API 价格折算的费用**，以及**5 小时 / 每周订阅额度的使用率**。终端和桌面应用（Code 标签页）中均可显示。
 
 ```
-This month $31.05 · 5h ██░░░░░░ 24% (resets in 2h05m) · 7d ███░░░░░ 41% (resets in 3d4h)
+This month $31.05 · 5h 24% (resets in 2h05m) · 7d 41% (resets in 3d4h)
 ```
 
-进度条共 8 格，用量达到 90% 以上会显示 `!`。
+用量达到 90% 以上时，百分比后会显示 `!`。
 
 ## 安装
 

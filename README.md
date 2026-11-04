@@ -2,15 +2,15 @@
 
 **English** | [한국어](docs/README.ko.md) | [简体中文](docs/README.zh-CN.md)
 
-![license](https://img.shields.io/badge/license-MIT-blue) ![version](https://img.shields.io/badge/version-0.2.1-green) ![claude code](https://img.shields.io/badge/Claude_Code-mod-orange)
+![license](https://img.shields.io/badge/license-MIT-blue) ![version](https://img.shields.io/badge/version-0.2.2-green) ![claude code](https://img.shields.io/badge/Claude_Code-mod-orange)
 
 A Claude Code mod that keeps **this month's API-equivalent spend** and your **5-hour / weekly plan usage** in the status line, in the terminal and in the desktop app (Code tab).
 
 ```
-This month $31.05 · 5h ██░░░░░░ 24% (resets in 2h05m) · 7d ███░░░░░ 41% (resets in 3d4h)
+This month $31.05 · 5h 24% (resets in 2h05m) · 7d 41% (resets in 3d4h)
 ```
 
-Each bar is 8 cells; `!` appears at 90% or more.
+`!` appears after a percentage at 90% or more.
 
 ## Install
 

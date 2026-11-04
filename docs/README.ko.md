@@ -2,15 +2,15 @@
 
 [English](../README.md) | **한국어** | [简体中文](README.zh-CN.md)
 
-![license](https://img.shields.io/badge/license-MIT-blue) ![version](https://img.shields.io/badge/version-0.2.1-green) ![claude code](https://img.shields.io/badge/Claude_Code-mod-orange)
+![license](https://img.shields.io/badge/license-MIT-blue) ![version](https://img.shields.io/badge/version-0.2.2-green) ![claude code](https://img.shields.io/badge/Claude_Code-mod-orange)
 
 Claude Code 상태줄에 **이번 달 API 환산 비용**과 **5시간·주간 구독 한도 사용률**을 항상 띄워 주는 mod입니다. 터미널과 데스크톱 앱(Code 탭) 모두에서 보입니다.
 
 ```
-This month $31.05 · 5h ██░░░░░░ 24% (resets in 2h05m) · 7d ███░░░░░ 41% (resets in 3d4h)
+This month $31.05 · 5h 24% (resets in 2h05m) · 7d 41% (resets in 3d4h)
 ```
 
-막대는 8칸이며, 90% 이상이면 `!`가 붙습니다.
+90% 이상이면 퍼센트 뒤에 `!`가 붙습니다.
 
 ## 설치
 

@@ -1,6 +1,6 @@
 {
   "name": "usage-status",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Shows this month's Claude Code API-equivalent spend and your 5-hour / weekly plan usage in the status line",
   "author": {
     "name": "lastnamesong"

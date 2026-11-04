@@ -12,19 +12,13 @@ export function untilReset(resetsAt: string | undefined, now: number): string {
   return h >= 24 ? `${Math.floor(h / 24)}d${h % 24}h` : `${h}h${String(m).padStart(2, '0')}m`
 }
 
-// 8-cell usage bar: "██░░░░░░"
-export function bar(percent: number): string {
-  const n = Math.min(8, Math.max(0, Math.round((percent / 100) * 8)))
-  return '█'.repeat(n) + '░'.repeat(8 - n)
-}
-
 export function formatLimits(limits: readonly SessionRateLimit[], now: number): string {
   return limits
     .filter(l => LABEL[l.kind])
     .map(l => {
       const left = untilReset(l.resetsAt, now)
       const pct = Math.round(l.percentUsed)
-      return `${LABEL[l.kind]} ${bar(pct)} ${pct}%${pct >= 90 ? '!' : ''}${left ? ` (resets in ${left})` : ''}`
+      return `${LABEL[l.kind]} ${pct}%${pct >= 90 ? '!' : ''}${left ? ` (resets in ${left})` : ''}`
     })
     .join(' · ')
 }

@@ -1,14 +1,12 @@
 import { expect, test } from 'claude-code/testing'
 
-import { bar, formatLimits, untilReset } from './register'
+import { formatLimits, untilReset } from './register'
 
 test('rate-limit formatting', async () => {
   const now = Date.parse('2026-11-04T10:00:00Z')
   expect(untilReset('2026-11-04T12:05:00Z', now)).toBe('2h05m')
   expect(untilReset('2026-11-07T14:00:00Z', now)).toBe('3d4h')
   expect(untilReset('2026-11-04T09:00:00Z', now)).toBe('')
-  expect(bar(0)).toBe('░░░░░░░░')
-  expect(bar(130)).toBe('████████')
   expect(
     formatLimits(
       [
@@ -18,5 +16,5 @@ test('rate-limit formatting', async () => {
       ],
       now,
     ),
-  ).toBe('5h ██░░░░░░ 24% (resets in 2h05m) · 7d ████████ 95%!')
+  ).toBe('5h 24% (resets in 2h05m) · 7d 95%!')
 })
